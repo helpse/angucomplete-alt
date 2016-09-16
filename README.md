@@ -1,8 +1,10 @@
 angucomplete-alt
 ============
 
-This is a fork of Daryl Rowland's angucomplete (https://github.com/darylrowland/angucomplete) with a bit of tweaks such as:
+This is a fork of Hidenari Nozaki's angumplete-alt (https://github.com/ghiden/angucomplete-alt) fork of Daryl Rowland's angucomplete
+(https://github.com/darylrowland/angucomplete) with a bit of tweaks such as:
 
+* Added grouped results support
 * change long attribute names to hyphenated ones
 * coding style similar to angular standard
 * refactored in general
