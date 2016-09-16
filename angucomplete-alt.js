@@ -51,7 +51,7 @@
         '    <div class="angucomplete-searching" ng-show="searching" ng-bind="textSearching"></div>' +
         
         '    <div class="angucomplete-title">Events</div>' +
-        '    <div class="angucomplete-row" ng-repeat="result in results | filter: { $: \'event\' } as filterEve" ng-click="selectResult(result)" ng-mouseenter="hoverRow($index, 'event')" ng-class="{\'angucomplete-selected-row\': $index == currentIndex && currentType == \'event\'}">' +
+        '    <div class="angucomplete-row" ng-repeat="result in results | filter: { $: \'event\' } as filterEve" ng-click="selectResult(result)" ng-mouseenter="hoverRow($index, \'event\')" ng-class="{\'angucomplete-selected-row\': $index == currentIndex && currentType == \'event\'}">' +
         '      <div ng-if="imageField" class="angucomplete-image-holder">' +
         '        <img ng-if="result.image && result.image != \'\'" ng-src="{{result.image}}" class="angucomplete-image"/>' +
         '        <div ng-if="!result.image && result.image != \'\'" class="angucomplete-image-default"></div>' +
@@ -64,7 +64,7 @@
         '    <div class="angucomplete-searching" ng-show="!filterEve.length" ng-bind="textSearching"></div>' +
         
         '    <div class="angucomplete-title">Categories</div>' +
-        '    <div class="angucomplete-row" ng-repeat="result in results | filter: { $: \'category\' } as filterCat" ng-click="selectResult(result)" ng-mouseenter="hoverRow($index, 'event')" ng-class="{\'angucomplete-selected-row\': $index == currentIndex && currentType == \'category\'}">' +
+        '    <div class="angucomplete-row" ng-repeat="result in results | filter: { $: \'category\' } as filterCat" ng-click="selectResult(result)" ng-mouseenter="hoverRow($index, \'category\')" ng-class="{\'angucomplete-selected-row\': $index == currentIndex && currentType == \'category\'}">' +
         '      <div ng-if="imageField" class="angucomplete-image-holder">' +
         '        <img ng-if="result.image && result.image != \'\'" ng-src="{{result.image}}" class="angucomplete-image"/>' +
         '        <div ng-if="!result.image && result.image != \'\'" class="angucomplete-image-default"></div>' +
