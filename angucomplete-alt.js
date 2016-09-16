@@ -1,5 +1,5 @@
 /*
- * angucomplete-alt
+ * angucomplete-alt-groups
  * Autocomplete directive for AngularJS
  * This is a fork of Hidenari Nozaki's angumplete-alt fork of Daryl Rowland's angucomplete with some extra features.
  * By Sergio Melendez
