@@ -1,0 +1,148 @@
+<div class="container-fluid canvas mainCanvas ">
+    <div class="bg-crowd"></div>
+    <div class="inputContainer">
+        <div class="mainTitle animated fadeInUp title">
+
+            Linking Ticket Sellers & Fans
+
+        </div>
+        <input type="hidden" ng-model="selectedObject">
+        <i class="fa fa-search mainSearchIcon"></i>
+        <angucomplete-alt id="ex1"
+                          placeholder="Search for events, venue or city"
+                          pause="100"
+                          selected-object="selectedObject"
+                          local-data="objects"
+                          search-fields="name,id"
+                          title-field="name,desc"
+                          minlength="2"
+                          template-url="/templates/template"
+                          input-class="mainSearch"
+                          input-name="inputName"
+                          input-changed="inputChanged"
+                {#            auto-match="true"#}
+
+        />
+    </div>
+    <div class="ticketsLogoFirm">
+        <div class="ticketsLogo">
+            <div class="firstTicketErs"></div>
+            <div class="firstTicket">
+                <div class="ticketTest title">
+                    TICKET
+                </div>
+            </div>
+            <div class="secondTicket">
+
+            </div>
+            <div class="thirdTicket">
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid landingMainText">
+    <div class="row col-sm-12 center-block wids">
+        <div class="col-sm-5 col-sm-offset-1 mainWid popWid">
+            <h4 class="title">Popular Events</h4>
+            <div class="col-sm-12 ">
+                <div ng-repeat="event in popEvents" class="divPop" ng-class="{'lastPop':$last}">
+                    <span class="popTitle"> {$ event.name $}</span><br>
+                    {$ event.details $}<br>
+                    <span class="popDetails">{$ event.location $}</span><br>
+                    <div class="popBtn">
+                        <div class="popBt">Starting at $233</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-5 mainWid">
+            <h4 class="title">Your Upcoming Events</h4>
+            <div class="col-sm-12 ">
+                <div ng-repeat="event in popEventsSoon" class="divPop" ng-class="{'lastPop':$last}">
+                    <span class="popTitle"> {$ event.name $}</span><br>
+                    <span class="popDetails">{$ event.details $}</span><br>
+                    <span class="popDetails">{$ event.location $}</span>
+                    <div class="popSold">2/10 sold</div>
+                    <br>
+                    <div class="popBtn">
+                        <div class="popBt">Go To Event</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row col-sm-11 col-sm-offset-1 recentActivity">
+            <h4 class="title">Recent Activity</h4>
+            <div class="col-sm-11 ">
+                <div class="divPop" ng-class="{'lastPop':$last}">
+                    <i class="iconPop fa fa-credit-card-alt" aria-hidden="true"></i>
+                    19.11.2016 - You sold one ticket to Oded.
+                    <div class="blueBtn">Go To Event</div>
+                </div>
+
+                <div class="divPop" ng-class="{'lastPop':$last}">
+                    <i class="iconPop fa fa-ticket" aria-hidden="true"></i>
+                    19-11-2016 - You posted 35 tickets to FC Barcelona
+                    <div class="blueBtn">Go To Event</div>
+                </div>
+                <div class="divPop" ng-class="{'lastPop':$last}">
+                    <i class="iconPop fa fa-shopping-cart" aria-hidden="true"></i>
+                    19-11-2016 - You bought 10 tickets to Adele
+                    <div class="blueBtn">Go To Event</div>
+                </div>
+                <div class="divPop" ng-class="{'lastPop':$last}">
+                    <i class="iconPop fa fa-upload" aria-hidden="true"></i>
+                    19-11-2016 - You uploaded 3 tickets to order #342234
+                    <div class="blueBtn">Go To Event</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+{#<div class="landingText">#}
+{#    <h1>Future Features</h1>#}
+{#    {% load staticfiles %}#}
+{#    <div class="center-block integrationWith">Integration With <span class="integrationPic"><img#}
+{#            src="{% static "images/viagogo.png" %}"></span></div>#}
+{#    <div class="center-block integrationWith">Integration With <span class="integrationPic"><img src="{% static "images/seatwave.png" %}"></span> </div>#}
+{#    <div class="center-block integrationWith dragInt">Drag & Drop Tickets <span class="integrationPic"><i#}
+{#            class="fa fa-ticket iconInt"></i></span></div>#}
+{##}
+{#    <div class="container popBlock">#}
+{##}
+{#        <a href='/#/event/6'>#}
+{#            <div class="col-sm-3 popEvent ">#}
+{#                COLDPLAY#}
+{#                <div class="boxText">Berlin, Germeny</div>#}
+{#            </div>#}
+{#        </a>#}
+{#        <a href='/#/event/6'>#}
+{#            <div class="col-sm-3 popEvent ">#}
+{#                COLDPLAY#}
+{#                <div class="boxText">Berlin, Germeny</div>#}
+{#            </div>#}
+{#        </a>#}
+{#        <a href='/#/event/6'>#}
+{#            <div class="col-sm-3 popEvent ">#}
+{#                COLDPLAY#}
+{#                <div class="boxText">Berlin, Germeny</div>#}
+{#            </div>#}
+{#        </a>#}
+{#        <a href='/#/event/6'>#}
+{#            <div class="col-sm-3 popEvent ">#}
+{#                COLDPLAY#}
+{#                <div class="boxText">Berlin, Germeny</div>#}
+{#            </div>#}
+{#        </a>#}
+{##}
+{#    </div>#}
+{##}
+{#</div>#}
+
+
+<footer class="footer">
+    <div class="container">
+        <p class="footerText">Contact Us</p>
+    </div>
+</footer>
